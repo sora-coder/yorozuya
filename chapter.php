@@ -52,23 +52,28 @@
         for($x = 1; $x < $cnt; $x++){
                 echo "{$x}番　{$marged[$x - 1]}"."<br/>";
             }
-
         // 九九
-        for($x = 1; $x < 10; $x++){
-            for($y = 1; $y < 10; $y++){
-                $sum = $x * $y;
-                echo "{$x}×{$y}={$sum}";
-                if($y < 9){
-                    echo ",　";
+        ?>
+        <table border="1" width=100% table-layout="fixed">
+            <?php
+            for($x = 1; $x < 10; $x++){
+                echo "<tr>";
+                for($y = 1; $y < 10; $y++){
+                    $sum = $x * $y;
+                    echo "<td align='center'>{$sum}</td>";
+                    // if($y < 9){
+                    //     echo ",　";
+                    // }
+                    // if($y >= 9){
+                    //     echo "<br/>";
+                    // }
                 }
-                if($y >= 9){
-                    echo "<br/>";
-                }
+                echo "</tr>";
             }
-        }
+            ?>
+        </table>
 
 
-    ?>
 
 </body>
 </html>
