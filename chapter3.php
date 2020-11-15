@@ -24,17 +24,15 @@
         public function eat(){
             echo "食べます"."<br/>";
         }
-
-
+        public function birthday(){
+            return $this->birthday;
+        }
     }
 
     $human = new Human("shige", "1/17", "Man");
     $human->eat();
     $human->walk();
-
-
-
-
+    echo $human->birthday();
     ?>
 
 
