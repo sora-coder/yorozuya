@@ -13,11 +13,22 @@
         $fruits = [
             'apple'=>'りんご',
             'peach'=>'もも',
-            'remon'=>'レモン'
+            'remon'=>'レモン',
+            'cherry'
         ];
         foreach($fruits as $name) {
             echo "{$name}が美味しい！"."<br/>";
         }
+        echo "{$fruits['remon']}！"."<br/>";
+        $fruits['strawberry'] = 'いちご';
+        echo $fruits['strawberry']."<br/>";
+
+        $leader = [
+            "レッド", "シロナ", "アイリス"
+        ];
+        echo $leader[0]."<br/>";
+
+
 
         $x = -5;
         if($x > 30){
@@ -27,6 +38,9 @@
         } else{
             echo('マイナスです。');
         }
+
+
+
     ?>
 
 </body>
